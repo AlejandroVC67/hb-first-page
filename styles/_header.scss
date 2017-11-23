@@ -9,5 +9,13 @@
 		color:transparent;
 		-webkit-background-clip: text;
 		background-clip: text;
+		@include phone {
+			font-size: 35px;
+		}
+		@include breakpnt{
+			font-size: 58px;
+		}
 	}
+
+
 }

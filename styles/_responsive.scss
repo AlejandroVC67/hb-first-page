@@ -1,5 +1,11 @@
 @mixin phone{
-	@media(max-width: #{$breakpoint}){
+	@media(min-width: #{$breakpoint}){
+		@content;
+	}
+}
+
+@mixin breakpnt{
+	@media(min-width: 950px){
 		@content;
 	}
 }
