@@ -1,0 +1,53 @@
+
+.images-wrapper{
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-gap: 10px;
+	width: calc(100% - 2px);
+	height: calc(100vh - 90px);
+	&-container{
+		position: relative;
+		z-index: 1;
+		//overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		// max-width: 419px;
+		// max-height: 196px;	
+		perspective: 1000px;
+		  &:hover .image-container-flipper{
+		  	transform: rotateY(180deg);
+		  }
+	}
+	 @include phone{
+	 	grid-template-columns: repeat(2, 1fr);
+	 	grid-template-rows: repeat(2, 1fr);
+		 
+	 }
+}
+
+ .image-container-flipper{
+ 		transform-style: preserve-3d;
+ 		transition:  1.0s linear;
+ }
+
+ .front {
+	position: absolute;
+	backface-visibility: hidden;
+ }
+
+
+ .back {
+	transform: rotateY(180deg);
+	//display: block;
+ }
+
+ @for $i from 1 through 3{
+	@for $j from 1 through 3{
+		.area-#{$iterator}{
+			grid-area: #{$i} / #{$j};
+		}
+		$iterator: $iterator + 1;
+	}
+}
+
+

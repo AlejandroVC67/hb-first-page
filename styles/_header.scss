@@ -1,0 +1,13 @@
+
+.header{
+	width: 100%;
+  align-items: center;
+	justify-content: center;
+	top: 0;
+	&-text{
+		background-image: -webkit-gradient( linear, left top, right top, color-stop(0, rgb(255, 255, 255)),color-stop(1, #000));
+		color:transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+}
