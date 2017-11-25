@@ -3,9 +3,22 @@
 	display: grid;
 }
 
-.container{
-	max-width: 100%;
-	margin: 0 auto;
+.center-items{
+	align-items: center;
+	justify-content: center;
+}
 
+.border{
+	border: 5px solid rgba(15, 234, 32, 0.822);
+}
+
+h6{
+	margin-left: 28%;
+}
+
+img{
+	height: 90%;
+	padding-top: 14%;
+	margin-left: 5%;
 }
 
