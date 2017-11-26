@@ -9,7 +9,7 @@
 }
 
 .border{
-	border: 5px solid rgba(15, 234, 32, 0.822);
+	border: 5px solid rgba(0, 7, 0, 0.822);
 }
 
 h6{
@@ -19,6 +19,9 @@ h6{
 img{
 	height: 90%;
 	padding-top: 14%;
-	margin-left: 5%;
+	@include phone{
+		width: 50%;
+		margin-left: 26%;
+	}
 }
 

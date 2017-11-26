@@ -4,8 +4,3 @@
 	}
 }
 
-@mixin breakpnt{
-	@media(min-width: 950px){
-		@content;
-	}
-}
