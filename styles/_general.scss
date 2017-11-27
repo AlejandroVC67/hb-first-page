@@ -9,11 +9,11 @@
 }
 
 .border{
-	border: 5px solid rgba(0, 7, 0, 0.822);
+	border: 2px solid rgba(0, 7, 0, 0.822);
 }
 
 h6{
-	margin-left: 28%;
+	margin-left: 15%;
 }
 
 img{
@@ -23,5 +23,16 @@ img{
 		width: 50%;
 		margin-left: 26%;
 	}
+}
+
+section{
+	cursor: pointer;
+}
+
+
+.align-text{
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 3%;
 }
 
